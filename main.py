@@ -11,6 +11,5 @@ f3 = Function(0.1, 2, lambda x: 1 / x - 2, lambda x: -1 / (x ** 2), 0.2)
 f4 = Function(0.2, 2, lambda x: 1 / x - 2, lambda x: -1 / x ** 2, 0.2)
 
 animer = Animation(f4)
-
-anim = animation.FuncAnimation(animer.fig, animer.animer_la_secante, frames=15, interval=1500, blit=True)
-print("OK")
+draw_func = animer.animer_la_secante
+anim = animation.FuncAnimation(animer.fig, draw_func, frames=150, interval=1500, blit=True)

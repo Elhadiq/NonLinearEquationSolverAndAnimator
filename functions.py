@@ -15,7 +15,7 @@ class Function:
         self.x0 = x0
         self.iterations = 300
         self.error = 1e-10
-        self.pick = b
+        self.pick = a
 
     def plot(self):
         fig = plt.figure(figsize=(12, 8))

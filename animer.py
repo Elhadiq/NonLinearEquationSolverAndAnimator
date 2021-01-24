@@ -42,7 +42,7 @@ class Animation:
         else:
             self.ax.plot([self.xn_secante[n - 1], self.function.pick],
                          [self.function.f(self.xn_secante[n - 1]), self.function.f(self.function.pick)], '--')
-            self.pt.set_data(self.xn_secante[:n], [0] * (n - 1))
+            self.pt.set_data(self.xn_secante[:n], [0] * n)
             self.ax.plot([self.xn_secante[n - 1], self.xn_secante[n - 1]], [0, self.function.f(self.xn_secante[n - 1])],
                          '--')
         txt_title = self.ax.set_title('Méthode de la secante: frame {}'.format(n))
